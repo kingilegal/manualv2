@@ -28,6 +28,9 @@ class InstitutesController < ApplicationController
 
     respond_to do |format|
       if @institute.save
+        
+       # Sends email to user when user is created.
+       ExampleMailer.sample_email(@user).deliver
         format.html { redirect_to @institute, notice: 'Institute was successfully created.' }
         format.json { render :show, status: :created, location: @institute }
       else
