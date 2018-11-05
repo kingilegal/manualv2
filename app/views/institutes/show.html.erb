@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @institute.name %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @institute.contact %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @institute.address %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @institute.district %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @institute.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @institute.email %>
+</p>
+
+<%= link_to 'Edit', edit_institute_path(@institute) %> |
+<%= link_to 'Back', institutes_path %>
